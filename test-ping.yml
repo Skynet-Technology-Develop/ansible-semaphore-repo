@@ -5,7 +5,6 @@
   hosts: all
   #remote_user: root
   become: false
-  gather _facts: false
   tasks:
     - name: find disk space available.
       ansible.windows.win_ping:
