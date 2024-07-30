@@ -1,5 +1,5 @@
 ---
-- name: win_ping test
+- name: Win ping test
   hosts: all
   become: false
   gather_facts: false
