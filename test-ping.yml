@@ -6,4 +6,4 @@
   task:
     - name: test connection
       ansible.windows.win_ping:
-
+---
