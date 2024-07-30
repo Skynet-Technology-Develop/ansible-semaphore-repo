@@ -1,9 +1,11 @@
 ---
 # This playbook runs a basic DF command.
 
-- hosts: all
+- name: ciao
+  hosts: all
   #remote_user: root
-
+  become: false
+  gather _facts: false
   tasks:
-  - name: find disk space available.
-    ansible.windows.win_ping:
+    - name: find disk space available.
+      ansible.windows.win_ping:
