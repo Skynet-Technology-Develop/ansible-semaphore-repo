@@ -1,0 +1,11 @@
+name: Add issue to GP-001 Global Execution
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  call-global-gp001:
+    uses: Skynet-Technology-Develop/sky-actions/.github/workflows/global_action_gp001.yml@main
+    secrets:
+      ORG_ACTIONS_TOKEN: ${{ secrets.ORG_ACTIONS_TOKEN }}
